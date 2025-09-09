@@ -1,0 +1,26 @@
+{
+  "$schema": "https://moonlight-mod.github.io/manifest.schema.json",
+  "id": "freeMoji",
+  "version": "1.0.4",
+  "apiLevel": 2,
+  "meta": {
+    "name": "Freemoji",
+    "tagline": "Free Nitro emoji!",
+    "description": "Sends external emoji as hyperlinks instead of raw URLs. Customize the link text to your liking - use {{NAME}} for emoji name or {{.}} for a dot like Vencord.",
+    "authors": ["uwx", "maisymoe"],
+    "source": "https://github.com/uwx/moonlight-extensions"
+  },
+  "dependencies": ["spacepack"],
+  "settings": {
+    "linkText": {
+      "type": "string",
+      "description": "Text to display in hyperlinks. Use {{NAME}} for emoji name, {{.}} for a dot (like Vencord), or any custom text.",
+      "default": "{{NAME}}"
+    },
+    "useHyperlinks": {
+      "type": "boolean",
+      "description": "Format emojis as hyperlinks [text](url) instead of plain URLs",
+      "default": true
+    }
+  }
+}
